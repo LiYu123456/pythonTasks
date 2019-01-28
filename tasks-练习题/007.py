@@ -1,0 +1,6 @@
+#coding:UTF-8
+print("Start....")
+a=[1,2,3,4,5,6,7,8,9]
+b=a[:]
+print(b)
+print("End")
