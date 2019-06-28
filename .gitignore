@@ -1,0 +1,10 @@
+target/
+venv/
+!.mvn/wrapper/maven-wrapper.jar
+#IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+.mvn
+mvn*

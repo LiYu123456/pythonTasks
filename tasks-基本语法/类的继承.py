@@ -60,7 +60,7 @@ class Parent:
 		print("这是父类方法")
 		
 class Child(Parent):
-	"父类方法定义"
+	"""父类方法定义"""
 	classAttr=200
 	def myMethod1(self):
 		print("这是子类的方法")
@@ -75,8 +75,8 @@ print(p.classAttr)
 print("/*********************运算符重载**************************/")
 class Vector:
 	def __init__(self,a,b):
-		self.a=a;
-		self.b=b;
+		self.a=a
+		self.b=b
 		
 	def __add__(self,other):
 		return Vector(self.a+other.a,self.b+other.b)
@@ -92,7 +92,10 @@ class JustCounter:
 	__secretCount=0
 	publicCount=1
 	_protectedCount=5
-	
+
+	def __init__(self):
+		self._JustCounter__secretCount = None
+
 	def count(self):
 		self.__secretCount+=1
 		self.publicCount+=1
